@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDriverMonitor.Register" Title="Register">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout x:Name="layoutPage" >
+
+                <Entry Placeholder="User Name" Keyboard="Text"  x:Name="enUserName" ></Entry>
+                <Entry Placeholder="Email"  Keyboard="Email" x:Name="enEmail" ></Entry>
+                <Entry Placeholder="Tel" Keyboard="Telephone" x:Name="enTel" ></Entry>
+                <Entry Placeholder="Password" IsPassword="True" x:Name="enPassword" ></Entry>
+                <Entry Placeholder="Confirm Password" IsPassword="True"  x:Name="enConfirmPassword" ></Entry>
+
+                <Button  x:Name="btnTakePhoto" Text="TAKE YOURS PHOTO" Clicked="btnTakePhoto_Clicked"></Button>
+                <!--<Button x:Name="btnTest" Text="Test" Clicked="btnTest_Clicked"></Button> -->
+                <Image HeightRequest="300" WidthRequest="250"  x:Name="imageShow"></Image>
+                <Button  x:Name="btnRegister"  Clicked="btnRegister_Clicked"  Text="Register" ></Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
